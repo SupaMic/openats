@@ -1,6 +1,6 @@
 #!/bin/sh
 
-apt-get install erlang
+sudo apt-get install erlang
 mix local.hex --force -y
 mix local.rebar --force -y
 mix deps.get

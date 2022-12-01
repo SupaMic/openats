@@ -1,8 +1,11 @@
-image: gitpod/workspace-elixir:2022-11-15-17-00-18
+image: gitpod/workspace-elixir:2022-04-01-12-31-37
 
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: chmod +x ./install.sh
+  - init: |
+      sudo apt-get update
+      sudo apt-get install erlang
+      chmod +x ./install.sh
   - command: ./install.sh
 
 
