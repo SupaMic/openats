@@ -4,7 +4,7 @@ import Config
 config :openats, Openats.Repo,
   username: "postgres",
   password: "postgres",
-  hostname: "192.168.1.132",
+  hostname: "localhost",
   database: "openats_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
